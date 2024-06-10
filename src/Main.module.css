@@ -1,0 +1,9 @@
+.main {
+  width: 80rem;
+  height: 50rem;
+
+  display: flex;
+  justify-content: center;
+
+  margin-top: 4.5rem;
+}

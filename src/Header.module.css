@@ -1,0 +1,54 @@
+.header {
+  width: 50rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: end;
+
+  margin-top: 8rem;
+  position: relative;
+}
+
+.header h1 {
+  display: inline-block;
+  font-weight: 600;
+  font-family: "Josefin Sans", "Source Code Pro", "Robot", sans-serif;
+
+  color: #007cb9;
+
+  font-size: 7.8rem;
+
+  z-index: 3;
+}
+
+.sun {
+  position: absolute;
+  z-index: 1;
+
+  top: -5.5rem;
+  left: -2.5rem;
+
+  animation: sunAnimation 6s linear infinite;
+}
+
+.cloud {
+  position: absolute;
+  z-index: 2;
+
+  top: -2rem;
+  left: 0;
+}
+
+@keyframes sunAnimation {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(-10px, -10px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}

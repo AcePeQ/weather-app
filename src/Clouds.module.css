@@ -1,0 +1,67 @@
+.cloud_1_animation {
+  animation: right_1 6s linear infinite;
+}
+
+.cloud_2_animation {
+  animation: left_1 6s linear infinite;
+  animation-delay: 2.5s;
+}
+
+.cloud_3_animation {
+  animation: right_1 6s linear infinite;
+  animation-delay: 3.5s;
+}
+
+.cloud_1 {
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+
+.cloud_2 {
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
+
+.cloud_3 {
+  position: absolute;
+  top: 0;
+  right: 350px;
+}
+
+@keyframes right_1 {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes right_2 {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(30px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes left_1 {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
